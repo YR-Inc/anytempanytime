@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Any Temp Any Time Heating and Air Conditioning</title>
+    <link rel="stylesheet" href="/css/anytemp.css" type="text/css" media="screen" />
+    <style type="text/css">
+        #product-copy {
+            width: 500px !important
+        }
+    </style>
+    <script type="text/javascript">
+        function DoAllResidential() {
+            document.getElementById('residential').style.display = ''
+            document.getElementById('commercial').style.display = 'none'
+            for (i = 0; i < document.forms[0].length; i++)
+                if (document.forms[0].elements[i].name == "remodelspec[]") document.forms[0].elements[i].checked = false
+        }
+
+        function DoAllCommercial() {
+            document.getElementById('commercial').style.display = ''
+            document.getElementById('residential').style.display = 'none'
+            for (i = 0; i < document.forms[0].length; i++)
+                if (document.forms[0].elements[i].name == "remodelspec[]") document.forms[0].elements[i].checked = false
+        }
+    </script>
+
+</head>
+<body>
+    <!--Start Whole Page Container -->
+    <div id="page-container">
+        <!--Start Site Navigation -->
+        <div id="topNav">
+            <div id="logo">
+                <a href="/" id="btn-home"><i>Home</i></a>
+            </div>
+            <div id="buttons">
+                <a href="/" id="btn-home2">Home</a>
+                <a href="/about/" id="btn-about">About</a>
+                <a href="/services/" id="btn-services">Services</a>
+                <a href="/services/" id="btn-products">Products</a>
+                <a href="/contact/" id="btn-contact">Contact</a>
+            </div>
+        </div>
+        <!--EndSite Navigation -->
+        <!--Start Content Area-->
+        <div id="contact-content">
+            <div style="width:800px; position: relative; ">
+                <div id="CuInfo">
+                    <span class="orange">Any Temp Any Time LLC</span><br />
+                    73 Hawthorne Way<br />
+                    Hartsdale, NY 10530<br />
+                    Telephone: (914) 584-2736 , (914) 255.8405<br />
+                    Fax: (914) 801-2448
+                </div>
+            </div>
+
+            <div id="wrapper">
+                <div id="left">
+                    <!-- use a container to avoid using padding and border on left which causes cross-browser inconsistencies with width LEFT-->
+                    <div class="left-container"></div>
+                    <!--  -->
+                    <p style="margin-top: -2px;" id="billboard">
+                        <a href="http://www.bbb.org/new-york-city/business-reviews/heating-and-air-conditioning/any-temp-any-time-llc-in-hartsdale-ny-103906/" target="_blank" onfocus="if(this.blur)this.blur()">
+                            <img style="margin-bottom: 10px;" src="/images/ab-seal-horizontal.gif" alt="BBB Business Review Reliability Report" border="0" />
+                        </a>
+                        <br /><b>Please Note: </b><br />
+                        As soon as we receive your estimate request, Any Temp Any Time LLC will schedule a meeting to consult with you on-site about your scope of work.
+                        <!-- -->
+                        <br /><br />
+                        <img src="/images/HiRes.jpg" width="150" />
+                    </p>
+                    <!-- -->
+                    <div id="navcontainer">
+                        <ul id="navlist">
+                            <li><a href="http://www.anytempanytime.com/">HOME PAGE</a></li>
+                        </ul>
+                    </div>
+                    <p style="font-size: 10pt; text-align: center; padding-top: 10px;">
+                        Service/Estimates? <br />Call Us: <br />(914) 584.2736 <br />or (914) 255.8405
+                    </p>
+                </div><!-- end #left -->
+
+
+                <div id="right">
+
+                    <!-- use a container to avoid using padding and border on #right
+                    which causes cross-browser inconsistencies with width RIGHT-->
+                    <div class="right-container"></div>
+                    <form id="form1" action="https://formspree.io/mzbjnoke" method="POST">
+                        <div ID="StatusMessage" />
+
+                        <fieldset>
+                            <legend style="margin-bottom:0px">Project Details</legend>
+                            <table style="width:" 550px;"=550px;">
+                                <tr>
+                                    <td>
+                                        &nbsp;&nbsp;<label for="Budget" style="text-align:right;width:185px;">Budget:</label>
+                                        <SELECT NAME="Budget" id="Budget" onchange="location.href=(form.Budget.options[form.estimate.selectedIndex].value)" STYLE="font-family: Verdana; font-size: 12pt; color: #000000; margin-left: 8px; width: 220px;">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Under $1k">Under $1,000</option>
+                                            <option value="$1k-$2k">$1,000 - $2,000</option>
+                                            <option value="$2k-$5k">$2,000 - $5,000</option>
+                                            <option value="$5-$10k">$5,000 - $10,000</option>
+                                            <option value="$10k-$25k">$10,000 - $25,000</option>
+                                            <option value="$25k-$50k">$25,000 - $50,000</option>
+                                            <option value="$50k-$100k">$50,000 - $100,000</option>
+                                            <option value="$100k-$150">$100,000 - $150,000</option>
+                                            <option value="$150k+">Over $150,000</option>
+                                        </SELECT>
+                                    </td>
+                                    <!-- <br>	 -->
+                                    <td>
+                                        &nbsp;&nbsp;<label for="ProjectToBegin" style="text-align:right;width:185px">Project Timetable To Begin:</label>
+                                        <SELECT NAME="ProjectToBegin" id="ProjectToBegin" onchange="location.href=(form.ProjectToBegin.options[form.estimate.selectedIndex].value)" STYLE="font-family: Verdana;  font-size: 12pt; color: #000000; margin-left: 8px; width: 220px;">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Right Away">Right Away</option>
+                                            <option value="1-3 Months">1-3 Months</option>
+                                            <option value="3-6 Months">3-6 Months</option>
+                                            <option value="6 Months or more">6 Months or more</option>
+                                        </SELECT>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="35%" align="center" valign="top">
+                                        <br />
+                                        <input type="radio" name="renovatype" value="Residential"
+                                               onclick="DoAllResidential()" />&nbsp;Residential &nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="renovatype" value="Commercial"
+                                               onclick="DoAllCommercial()" />&nbsp;Commercial
+                                        <!--  </td></tr>  -->
+                                        <!-- <table  width=550 border=0 summary=""> -->
+                                    </td>
+                                </tr>
+                                <tr valign=top align=left id="residential" style="display:none">
+                                    <td width=50% BACKGROUND="/images/home2_installation.jpg">
+                                    </td>
+                                    <td width=50%>
+                                        <ul class="checklist">
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Central Air Replacement" />Central Air Replacement</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Central Air Full Installation" />Central Air Full Install</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Hydro-Air Systems" />Hydro-Air Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Zoning Applications" />Zoning Applications</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Boilers" />Boilers</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Furnaces" />Furnaces</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Humidifiers" />Humidifiers</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Heat Pumps" />Heat Pumps / Air & Water cooled</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Ventilation Systems" />Ventilation Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Temperature Control Systems" />Temperature Control Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Refrigeration Piping" />Refrigeration Piping</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Compressors" />Compressors</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Damper Systems" />Damper Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Energy Efficient Systems" />Energy Efficient Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Communication Systems" />Communication Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Ductless Split Systems" />Ductless Split Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Generators" />Generators</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <tr valign=top align=left id="commercial" style="display:none">
+                                    <td>
+                                        <ul class="checklist">
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Central Air Replacement" />Central Air Replacement</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Central Air Full Installation" />Central Air Full Install</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Hydro-Air Systems" />Hydro-Air Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Zoning Applications" />Zoning Applications</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Boilers" />Boilers</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Furnaces" />Furnaces</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Humidifiers" />Humidifiers</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Heat Pumps" />Heat Pumps / Air & Water cooled</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Ventilation Systems" />Ventilation Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Temperature Control Systems" />Temperature Control Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Refrigeration Piping" />Refrigeration Piping</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Compressors" />Compressors</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Damper Systems" />Damper Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Energy Efficient Systems" />Energy Efficient Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Communication Systems" />Communication Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Ductless Split Systems" />Ductless Split Systems</li>
+                                            <li><INPUT type="checkbox" name="remodelspec[]" value="Generators" />Generators</li>
+                                        </ul>
+                                    </td>
+                                    <td width=50% BACKGROUND="/images/DSCN4338c.jpg"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+
+                        <fieldset style="margin-top:2px;">
+
+                            <legend style="margin-bottom:0px"> Contact Details  </legend>
+
+                            <table>
+                                <tr>
+                                    <td width="35%" align="right" valign="top">
+                                        <label for="Name">Name</label>
+                                    </td>
+                                    <td>
+                                        <input name="Name" type="text" id="Name" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="35%" align="right" valign="top">
+                                        <label for="Email">E-mail</label>
+                                    </td>
+                                    <td>
+                                        <input name="Email" type="text" id="Email" /><br />
+                                        <span id="Email_Required" class="error" style="display:none;">Required</span>
+                                        <span id="Email_Regex" class="error" style="display:none;">Please check your e-mail</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="35%" align="right" valign="top">
+                                        <label for="Tel">Telephone</label>
+                                    </td>
+                                    <td>
+                                        <input name="Tel" type="text" id="Tel" />
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="35%" align="right" valign="top">
+                                        Contact preference
+                                    </td>
+                                    <td width="50%" align="center" valign="top">
+                                        Phone<input type="radio" value="Phone" checked name="ContactPreference" tabindex="5" />
+                                        <br />
+                                        E-mail<input type="radio" name="ContactPreference" value="Email" tabindex="0" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <table id="messageTbl" cols=1 cellpadding=1>
+                                <tbody>
+                                    <tr>
+                                        <td width="30%" align="right" valign="top">
+                                            <label for="Message">Message</label>
+                                        </td>
+                                        <td>
+                                            <textarea name="Message" rows="8" cols="40" id="Message"></textarea><br />
+                                            <span id="Message_Required" class="error" style="display:none;">Required</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                        <div style="text-align:right; margin-right: 20px; margin-bottom: 20px;">
+                            <button onclick="return onSubmit()" id="bSubmit">Submit</button>
+                        </div>
+
+                        <!-- </fieldset> -->
+
+                    </form>
+
+                </div><!-- end #right -->
+
+            </div>
+
+            <div style="clear: both; margin: 0;"></div>
+        </div>
+        <!--End Content Area-->
+        <!--Start Footer-->
+        <div id="footer">
+            <p>
+                Service/Estimates? Call Us: (914) 584.2736 or (914) 255.8405
+            </p>
+        </div>
+        <!--End Footer-->
+        <!--End Whole Page Container -->
+    </div>
+
+    <script type="text/javascript">
+        function onSubmit() {
+            var value = document.getElementById('Email').value.trim();
+            if (!value) {
+                document.getElementById('Email_Required').style.display = "inline";
+                return false;
+            }
+
+            var regexp = new RegExp('\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*', 'ig');
+            if (!regexp.test(value)) {
+                document.getElementById('Email_Regex').style.display = "inline";
+                return false;
+            }
+
+            value = document.getElementById('Message').value.trim();
+            if (!value) {
+                document.getElementById('Message_Required').style.display = "inline";
+                return false;
+            }
+
+            document.getElementById('StatusMessage').value = 'Thank you, your request has been submitted. We will respond to you shortly.';
+            return true;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-9214263-1");
+            pageTracker._trackPageview();
+        } catch (err) { }</script>
+
+</body>
+</html>
