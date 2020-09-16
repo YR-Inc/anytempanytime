@@ -110,7 +110,7 @@
                                     <!-- <br>	 -->
                                     <td>
                                         &nbsp;&nbsp;<label for="ProjectToBegin" style="text-align:right;width:185px">Project Timetable To Begin:</label>
-                                        <SELECT NAME="ProjectToBegin" id="ProjectToBegin" onchange="location.href=(form.ProjectToBegin.options[form.estimate.selectedIndex].value)" STYLE="font-family: Verdana;  font-size: 12pt; color: #000000; margin-left: 8px; width: 220px;">
+                                        <SELECT NAME="Project Timetable To Begin" id="ProjectToBegin" onchange="location.href=(form.ProjectToBegin.options[form.estimate.selectedIndex].value)" STYLE="font-family: Verdana;  font-size: 12pt; color: #000000; margin-left: 8px; width: 220px;">
                                             <option value="Not Selected">Select</option>
                                             <option value="Right Away">Right Away</option>
                                             <option value="1-3 Months">1-3 Months</option>
@@ -203,7 +203,7 @@
                                         <label for="Email">E-mail</label>
                                     </td>
                                     <td>
-                                        <input name="Email" type="text" id="Email" required /><br />
+                                        <input name="Email" type="email" id="Email" required /><br />
                                     </td>
                                 </tr>
                                 <tr>
@@ -240,7 +240,7 @@
                             </table>
                         </fieldset>
                         <div style="text-align:right; margin-right: 20px; margin-bottom: 20px;">
-                            <button onclick="return onSubmit()" id="bSubmit">Submit</button>
+                            <button id="bSubmit">Submit</button>
                         </div>
 
                         <!-- </fieldset> -->
