@@ -88,8 +88,6 @@
                     which causes cross-browser inconsistencies with width RIGHT-->
                     <div class="right-container"></div>
                     <form id="form1" action="https://formspree.io/mzbjnoke" method="POST">
-                        <div ID="StatusMessage" />
-
                         <fieldset>
                             <legend style="margin-bottom:0px">Project Details</legend>
                             <table style="width:" 550px;"=550px;">
@@ -205,9 +203,7 @@
                                         <label for="Email">E-mail</label>
                                     </td>
                                     <td>
-                                        <input name="Email" type="text" id="Email" /><br />
-                                        <span id="Email_Required" class="error" style="display:none;">Required</span>
-                                        <span id="Email_Regex" class="error" style="display:none;">Please check your e-mail</span>
+                                        <input name="Email" type="text" id="Email" required /><br />
                                     </td>
                                 </tr>
                                 <tr>
@@ -237,8 +233,7 @@
                                             <label for="Message">Message</label>
                                         </td>
                                         <td>
-                                            <textarea name="Message" rows="8" cols="40" id="Message"></textarea><br />
-                                            <span id="Message_Required" class="error" style="display:none;">Required</span>
+                                            <textarea name="Message" rows="8" cols="40" id="Message" required></textarea><br />
                                         </td>
                                     </tr>
                                 </tbody>
@@ -268,31 +263,6 @@
         <!--End Footer-->
         <!--End Whole Page Container -->
     </div>
-
-    <script type="text/javascript">
-        function onSubmit() {
-            var value = document.getElementById('Email').value.trim();
-            if (!value) {
-                document.getElementById('Email_Required').style.display = "inline";
-                return false;
-            }
-
-            var regexp = new RegExp('\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*', 'ig');
-            if (!regexp.test(value)) {
-                document.getElementById('Email_Regex').style.display = "inline";
-                return false;
-            }
-
-            value = document.getElementById('Message').value.trim();
-            if (!value) {
-                document.getElementById('Message_Required').style.display = "inline";
-                return false;
-            }
-
-            document.getElementById('StatusMessage').value = 'Thank you, your request has been submitted. We will respond to you shortly.';
-            return true;
-        }
-    </script>
 
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
